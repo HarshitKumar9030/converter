@@ -5,21 +5,18 @@ To convert mp3,mp4 to other audio formats using ffmpeg.
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
 - install ffmpeg
--```bash
+- ```bash
     npm install
-```
--```bash
+    ```
+- ```bash
     npx tsc
-```
--```bash
+    ```
+- ```bash
     node dist/server.js
-```
+    ```
 
 
