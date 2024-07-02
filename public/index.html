@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+    <h1 class="text-3xl font-bold mb-8">Audio Converter</h1>
+    <form id="upload-form" class="space-y-6 w-full max-w-md px-4" enctype="multipart/form-data">
+        <input type="file" id="file-input" accept=".mp4,.mp3,.wav,.flac,.aac" class="block w-full text-sm text-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-gray-700 file:text-gray-300 hover:file:bg-gray-600" required>
+        <div>
+            <label for="output-format" class="block text-sm font-medium text-gray-300 mb-2">Output Format</label>
+            <select id="output-format" class="block w-full pl-3 pr-10 py-2 text-base bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option value="wav">WAV</option>
+                <option value="mp3">MP3</option>
+                <option value="flac">FLAC</option>
+                <option value="aac">AAC</option>
+            </select>
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-500">Convert</button>
+    </form>
+    <div id="result" class="mt-8"></div>
+    <script src="script.js"></script>
+</body>
+</html>
